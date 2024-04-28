@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, Verdana, sans-serif;
+  /* Yazı tipi ailesi */
+  font-size: 11px;
+  /* <p></p> etiketindeki ana yazı tipi boyutu */
+  background-color: #f0f0f0;
+  /* Web sayfasının arka plan rengi */
+  color: #333;
+  /* Metin rengi */
+}
+
+h1 {
+  color: #00a800;
+  /* Başlık rengi */
+  font-size: 24pt;
+  /* Başlık yazı tipi boyutu */
+  font-family: Georgia, Times, serif;
+  /* Başlık için kullanılan yazı tipi ailesi */
+  text-align: center;
+}
+
+h2 {
+  color: red;
+  /* Başlık rengi */
+  font-size: 18pt;
+  /* Başlık yazı tipi boyutu */
+  font-family: Georgia, Times, serif;
+  /* Başlık için kullanılan yazı tipi ailesi */
+}
+
+@keyframes color-change {
+  0% {
+    color: #00a800;
+  }
+
+  50% {
+    color: red;
+  }
+
+  100% {
+    color: blue;
+  }
+}
+
+h3 {
+  animation: color-change 3s infinite;
+}
+
+h1:hover {
+  animation: color-change 3s infinite;
+}
+
+
+iframe {
+  border: 1px solid #ccc;
+  /* Widget kenarlık rengi */
+  padding: 20px;
+  display: block;
+  margin: auto;
+}
+
+.isaret {
+  font-size: 50px;
+}
+
+
+@keyframes move {
+  0% {
+    font-size: 0px;
+  }
+
+  50% {
+    font-size: 70px;
+  }
+
+  100% {
+    font-size: 0px;
+  }
+
+}
+
+.hareket {
+  animation: move 5s infinite steps(1000);
+  color: #f0f0f0;
+}
